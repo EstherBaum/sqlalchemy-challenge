@@ -40,34 +40,33 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 
-@app.route(“/”)
+@app.route("/")
 def first_page():
-    print(“Whatever you want to show up on your end when someone accesses the server(?)”)
-    return “Here are all the available routes…”
+    return ()
 
 
-@app.route(“/api/v1.0/precipitation”)
+@app.route("/api/v1.0/precipitation")
 def precipitation():
     return jsonify()
 
 
-@app.route(“/api/v1.0/stations”)
+@app.route("/api/v1.0/stations")
 def station_list():
     return jsonify()
 
 
-@app.route(“/api/v1.0/tobs”)
+@app.route("/api/v1.0/tobs")
 def temp_observations():
-    return jsonify(“List of temperature observations for the previous year”)
+    return jsonify()
 
 
-@app.route(“/api/v1.0<start>)
+@app.route("/api/v1.0<start>")
 def min_ave_max_temps():
     return jsonify()
 
-@app.route(“/api/v1.0/<start>/<end>”)
-def 
-Return jsonify(“”)
+@app.route("/api/v1.0/<start>/<end>")
+def start_end():
+    return jsonify()
 
 if __name__ == "__main__":
     app.run(debug=True)
